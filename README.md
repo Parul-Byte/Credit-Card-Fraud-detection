@@ -19,17 +19,35 @@ information on the credit card. Reports on this type of Fraud increased 9to 2020
 
 ## Project goals
 
-The main aim of this project is the detection of fraudulent credit card transactions, as it is essential to figure out the fraudulent transactions so that customers do not get charged for the purchase of products that they did not buy. Fraudulent Credit card transactions will be detected with multiple ML techniques. Then, a comparison will be made between the outcomes and results of each method to find the best and most suited model for detecting fraudulent credit card transactions; graphs and numbers will also be provided. In addition, it explores previous literature and different
-techniques used to distinguish Fraud within a dataset.
+The main objectives of this project are:
 
+- To develop machine learning models for credit card fraud detection.
+- To analyze transaction patterns and classify fraudulent transactions.
+- To compare different ML algorithms based on performance metrics.
+- To identify the most effective model for fraud detection.
+
+The models are evaluated using Accuracy, Precision, Recall, and F1-score.
 
 <br>
 <br>
 
 ## Data Source
 
-The dataset was retrieved from an open-source website, Kaggle.com. It contains data on transactions made in 2013 by European credit card users in two days only. Thedataset consists of 31 attributes and 284,808 rows. Twenty-eight attributes are numeric variables that, due to the confidentiality and privacy of the customers, have been transformed using PCA transformation; the three remaining attributes are ”Time”, which contains the elapsed seconds between the first and other transactions
-of each Attribute, ”Amount” is the amount of each transaction, and the final attribute “Class” which contains binary variableswhere “1” is a case of fraudulent transaction, and “0” is not as case of fraudulent transaction.
+The dataset was retrieved from an open-source website, Kaggle.com. 
+
+The dataset contains credit card transactions made by European cardholders in 2013. It consists of:
+
+- 284,807 transactions
+- 31 attributes
+- 28 anonymized features transformed using PCA
+- Time feature
+- Amount feature
+- Class feature
+
+The **Class** attribute represents the target variable:
+
+- 0 → Normal Transaction
+- 1 → Fraudulent Transaction
 <br>
 <br>
 <b>Dataset: </b>
@@ -38,15 +56,33 @@ of each Attribute, ”Amount” is the amount of each transaction, and the final
 <br>
 <br>
 
-## Algorithm 
-1. K-Nearest Neighbor (KNN)
-2. Logistic Regression (L.R.)
-3. Support Vector Machine (SVM)
-4. Decision Tree (D.T.)
+## AMachine Learning Algorithms
+1. Decision Tree (D.T.)
+2. K-Nearest Neighbor (KNN) 
+3. Logistic Regression (L.R.)
+4. Support Vector Machine (SVM)
 
 
 <br>
 <br>
+
+## Model Performance
+
+The models were evaluated using Accuracy, Precision, Recall, and F1-score.
+
+| Model | Accuracy | Precision | Recall | F1 Score |
+|------|----------|-----------|--------|----------|
+| Decision Tree | 1.00 | 0.83 | 0.81 | 0.82 |
+| Logistic Regression | 0.91 | 0.94 | 0.87 | 0.90 |
+| SVM | 0.95 | 0.99 | 0.86 | 0.92 |
+| KNN | 1.00 | 0.83 | 0.82 | 0.83 |
+
+## Results
+
+Based on the evaluation metrics, Support Vector Machine achieved the highest F1-score and precision among the tested models.
+
+Although Decision Tree and KNN achieved high accuracy, accuracy alone is not sufficient for fraud detection because the dataset is highly imbalanced. Therefore, F1-score and precision are considered important metrics for selecting the best model.
+
 
 ## Future Work 
 There are many ways to improve the model, such as using it on different datasets with various sizes and data types or by changing the data splitting ratio and viewing it from a different algorithm perspective. An example can be merging telecom datato calculate the location of people to have better knowledge of the location of the card owner while his/her credit card is being used; this will ease the detection because if the card owner is in Dubai and a transaction of his card was made in Abu Dhabi, it
