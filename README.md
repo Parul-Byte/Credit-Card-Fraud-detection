@@ -56,7 +56,8 @@ The **Class** attribute represents the target variable:
 <br>
 <br>
 
-## AMachine Learning Algorithms
+
+## Machine Learning Algorithms
 1. Decision Tree (D.T.)
 2. K-Nearest Neighbor (KNN) 
 3. Logistic Regression (L.R.)
@@ -77,11 +78,14 @@ The models were evaluated using Accuracy, Precision, Recall, and F1-score.
 | SVM | 0.95 | 0.99 | 0.86 | 0.92 |
 | KNN | 1.00 | 0.83 | 0.82 | 0.83 |
 
+
+
 ## Results
 
 Based on the evaluation metrics, Support Vector Machine achieved the highest F1-score and precision among the tested models.
 
 Although Decision Tree and KNN achieved high accuracy, accuracy alone is not sufficient for fraud detection because the dataset is highly imbalanced. Therefore, F1-score and precision are considered important metrics for selecting the best model.
+
 
 
 ## Future Work 
